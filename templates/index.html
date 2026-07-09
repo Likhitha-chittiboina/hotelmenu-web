@@ -2,18 +2,120 @@
 <html>
 <head>
     <title>Hotel Menu</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial,sans-serif;
+            background:#f4f4f4;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            text-align:center;
+        }
+
+        h1{
+            background:#ff6600;
+            color:white;
+            padding:20px;
+        }
+
+        .menu{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+            margin-top:30px;
+        }
+
+        .card{
+            background:white;
+            width:220px;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+        }
+
+        .card img{
+            width:100%;
+            height:150px;
+            border-radius:10px;
+        }
+
+        .price{
+            color:red;
+            font-weight:bold;
+            font-size:20px;
+        }
+
+        button{
+            background:#28a745;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#218838;
+        }
+
+        footer{
+            margin-top:40px;
+            background:#333;
+            color:white;
+            padding:15px;
+        }
+    </style>
+
 </head>
+
 <body>
-    <h1>Welcome to Hotel Menu</h1>
 
-    <h2>Menu</h2>
-    <ul>
-        <li>Idli - Rs.30</li>
-        <li>Dosa - Rs.50</li>
-        <li>Biryani - Rs.150</li>
-        <li>Tea - Rs.20</li>
-    </ul>
+<div class="container">
 
-    <h3>Thank You! Visit Again.</h3>
+<h1>🍽 Welcome to Hotel Menu 🍽</h1>
+
+<div class="menu">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500" alt="Idli">
+<h2>Idli</h2>
+<p class="price">₹30</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500" alt="Dosa">
+<h2>Dosa</h2>
+<p class="price">₹50</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1563379091339-03246963d29c?w=500" alt="Biryani">
+<h2>Biryani</h2>
+<p class="price">₹150</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500" alt="Tea">
+<h2>Tea</h2>
+<p class="price">₹20</p>
+<button>Order Now</button>
+</div>
+
+</div>
+
+<footer>
+<h3>Thank You! Visit Again 😊</h3>
+</footer>
+
+</div>
+
 </body>
 </html>
