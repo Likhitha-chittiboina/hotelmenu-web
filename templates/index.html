@@ -4,51 +4,57 @@
     <title>Hotel Menu</title>
 
     <style>
-        body{
+        *{
             margin:0;
+            padding:0;
+            box-sizing:border-box;
             font-family:Arial, sans-serif;
-            background:#f2f2f2;
         }
 
-        .container{
-            width:90%;
-            margin:auto;
-            text-align:center;
+        body{
+            background:#f2f2f2;
         }
 
         h1{
             background:#ff6600;
             color:white;
+            text-align:center;
             padding:20px;
         }
 
         .menu{
             display:flex;
             justify-content:center;
-            gap:20px;
             flex-wrap:wrap;
-            margin-top:30px;
+            gap:20px;
+            padding:30px;
         }
 
         .card{
+            width:250px;
             background:white;
-            width:220px;
-            padding:15px;
             border-radius:10px;
-            box-shadow:0 0 10px gray;
+            box-shadow:0px 0px 10px gray;
+            text-align:center;
+            padding:15px;
         }
 
         .card img{
             width:100%;
-            height:150px;
+            height:180px;
             object-fit:cover;
             border-radius:10px;
+        }
+
+        .card h2{
+            margin:15px 0 10px;
         }
 
         .price{
             color:red;
             font-size:22px;
             font-weight:bold;
+            margin-bottom:15px;
         }
 
         button{
@@ -65,10 +71,12 @@
         }
 
         footer{
-            margin-top:30px;
             background:#222;
             color:white;
+            text-align:center;
             padding:20px;
+            margin-top:20px;
+            font-size:20px;
         }
     </style>
 
@@ -76,35 +84,33 @@
 
 <body>
 
-<div class="container">
-
 <h1>🍽 Welcome to Hotel Menu 🍽</h1>
 
 <div class="menu">
 
 <div class="card">
-<img src="https://picsum.photos/300/200?random=1" alt="Idli">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Idli_Sambar.JPG" alt="Idli">
 <h2>Idli</h2>
 <p class="price">₹30</p>
 <button>Order Now</button>
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/300/200?random=2" alt="Dosa">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Masala_Dosa.jpg" alt="Dosa">
 <h2>Dosa</h2>
 <p class="price">₹50</p>
 <button>Order Now</button>
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/300/200?random=3" alt="Biryani">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Hyderabadi_Chicken_Biryani.jpg" alt="Biryani">
 <h2>Biryani</h2>
 <p class="price">₹150</p>
 <button>Order Now</button>
 </div>
 
 <div class="card">
-<img src="https://picsum.photos/300/200?random=4" alt="Tea">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Tea.jpg" alt="Tea">
 <h2>Tea</h2>
 <p class="price">₹20</p>
 <button>Order Now</button>
@@ -113,10 +119,133 @@
 </div>
 
 <footer>
-<h3>😊 Thank You! Visit Again 😊</h3>
+😊 Thank You! Visit Again 😊
 </footer>
 
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Menu</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f2f2f2;
+        }
+
+        h1{
+            background:#ff6600;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .menu{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+            padding:30px;
+        }
+
+        .card{
+            width:250px;
+            background:white;
+            border-radius:10px;
+            box-shadow:0px 0px 10px gray;
+            text-align:center;
+            padding:15px;
+        }
+
+        .card img{
+            width:100%;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .card h2{
+            margin:15px 0 10px;
+        }
+
+        .price{
+            color:red;
+            font-size:22px;
+            font-weight:bold;
+            margin-bottom:15px;
+        }
+
+        button{
+            background:green;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:darkgreen;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+            font-size:20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>🍽 Welcome to Hotel Menu 🍽</h1>
+
+<div class="menu">
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Idli_Sambar.JPG" alt="Idli">
+<h2>Idli</h2>
+<p class="price">₹30</p>
+<button>Order Now</button>
 </div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Masala_Dosa.jpg" alt="Dosa">
+<h2>Dosa</h2>
+<p class="price">₹50</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Hyderabadi_Chicken_Biryani.jpg" alt="Biryani">
+<h2>Biryani</h2>
+<p class="price">₹150</p>
+<button>Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Tea.jpg" alt="Tea">
+<h2>Tea</h2>
+<p class="price">₹20</p>
+<button>Order Now</button>
+</div>
+
+</div>
+
+<footer>
+😊 Thank You! Visit Again 😊
+</footer>
 
 </body>
 </html>
